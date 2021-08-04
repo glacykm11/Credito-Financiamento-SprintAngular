@@ -1,0 +1,55 @@
+<main class="container">
+    <section class="content-box">
+
+            <h2>Qual o tipo de veículo que você deseja?</h2>
+            
+            <section>
+            <select id="veiculos" class="form-select" >
+                <option selected>Escolha o veículo:</option>
+                <option>Barco</option>
+                <option>Caminhão</option>
+                <option>Carro</option>
+                <option>Iate</option>
+                <option>JetSki</option>
+                <option>Lancha</option>
+                <option>Limousine</option>
+                <option>Moto</option>
+                <option>Van</option>
+            </select>
+            </section>
+
+            <section>
+                <label  for="formGroupExampleInput" class="form-label">Ano do veículo</label>
+                <input  id="valor" class="form-control" type="text"  placeholder="Digite o ano do veículo aqui"/>
+            </section>	
+
+            <section>
+                <label>Qual o valor do veículo desejado?</label>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">R$</span>
+                    <input type="text" class="form-control" onkeypress="$(this).mask('000.000.000.000.000,00', {reverse: true});" placeholder="0,00">
+                </div>
+            </section>
+
+            <section>
+                <label  for="formGroupExampleInput" class="form-label">Marca do veículo</label>
+                <input  id="marca" class = "form-control" placeholder="BMW, Ford, Chevrolet, Honda">
+            </section>
+
+            <p>Novo ou usado?</p>
+            
+            <section class="radio-options">
+                <input class="form-check-input" type="radio" id="novo" name="estadoDoCarro" value="novo">
+                <label class="form-check-label" for="flexRadioDefault1">Novo</label>
+
+                <input class="form-check-input" type="radio" id="usado" name="estadoDoCarro" value="usado">
+                <label class="form-check-label" for="flexRadioDefault1">Usado</label>
+            </section>
+        
+
+            <div id="botaoSubmit" value="text">
+                <a href="#" class="btn btn-warning" type="submit" value= "realizarpedido" id="botaopedido">Realizar Pedido</a>
+            </div>
+            
+    </section>
+</main>

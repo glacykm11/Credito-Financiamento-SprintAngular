@@ -1,0 +1,89 @@
+<main>
+    <section class="conteudo">
+      <p>Você deseja financiar algo específico?</p>
+      
+      <select id="opcao" class="form-select form-select-sm" aria-label=".form-select-sm example" style="max-width: 20rem;">
+        <option selected value="imoveis">Imóveis</option>
+        <option value="credito">Eletrônicos</option>
+        <option value="veiculos">Veículos</option>
+        <option value="credito">Curso/Faculdade</option>
+        <option value="celular">Smartphone</option>
+      </select>
+
+      <p>Qual a sua renda?</p>
+      <div class="input-group mb-3" style="max-width:20rem;">
+        <span class=" input-group-text" id="basic-addon1">R$</span>
+        <input type="text" class="form-control" step="0.1" placeholder="0,00" aria-label="Username"
+          aria-describedby="basic-addon1" onkeypress="$(this).mask('000.000.000.000.000,00', {reverse: true});">
+      </div>
+
+      <p>Que valor deseja?</p>
+      <div class="input-group mb-3" style="max-width: 20rem">
+        <span class=" input-group-text" id="basic-addon1">R$</span>
+        <input type="text" class="form-control" step="0.1" placeholder="0,00" aria-label="Username"
+          aria-describedby="basic-addon1" onkeypress="$(this).mask('000.000.000.000.000,00', {reverse: true});">
+      </div>
+
+      <article style="display:flex;">
+        
+        <div id="ra" class="form-check" style="display: flex; flex-wrap: wrap; justify-content: space-evenly;">
+          <input class="form-check-input entradaRadios" type="radio" name="exampleRadios" value="option1" checked>
+          <label class="form-check-label" for="radios">
+            <strong style="margin-right: 10px; margin-left: 10px;">Com entrada</strong>
+          </label>
+          <div class="input-group mb-3" style="max-width: 10rem; margin-right: 20px;">
+            <span class=" input-group-text" id="basic-addon1">R$</span>
+            <input type="text" class="form-control" id="valor" step="0.1" placeholder="0,00" aria-label="Username"
+              aria-describedby="basic-addon1" value="100" onkeypress="$(this).mask('000.000.000.000.000,00', {reverse: true});">
+          </div>
+        </div>
+
+        <div id="ra" class="form-check">
+          <input class="form-check-input entradaRadios" type="radio" name="exampleRadios" value="option2">
+          <label class="form-check-label" for="radios">
+            <strong>Sem entrada</strong>
+          </label>
+        </div>
+
+      </article>
+
+      <p>Quantidade de parcelas que deseja?</p>
+      <select class="form-select form-select-sm parcelas" aria-label=".form-select-sm example" style="max-width: 20rem;">
+        <option selected value="6">6x</option>
+        <option value="12">12x</option>
+        <option value="24">24x</option>
+        <option value="36">36x</option>
+        <option value="48">48x</option>
+        <option value="60">60x</option>
+        <option value="72">72x</option>
+        <option value="88">84x</option>
+        <option value="96">96x</option>
+      </select>
+
+      <section class="container">
+        <article class="row">
+          <div class="col-lg-12 text-center">
+            <a href="../[SP02] - Menu/Menu.html">
+              <button type="button" class="btn btn-warning">Voltar</button>
+            </a>
+            <a id="botao">
+              <button type="button" class="btn btn-warning">Simular</button>
+            </a>
+          </div>
+        </article>
+      </section>
+
+      <section style="margin-top: 80px;">
+        <h3>Resultado</h3>
+        <p>Valor da prestação: <span id="valor_prest"></span></p> 
+        <p>Valor Financiado: <span id="valor_financ"></span></p>
+        <p>Entrada: <span id="entrada"></span></p>
+        <p>Comprometimento da renda: <span id="comp_renda"></span></p>
+        <p>Total de Parcelas: <span id="parcela"></span></p>
+        <p>Juros ao mês: <span id="juros_mes"></span></p>
+        <p>Juros a pagar: <span id="juros_pagar"></span></p>
+        <p>Total do Financimento: <span id="total_finac"></span></p>
+      </section>
+
+    </section>
+  </main>
