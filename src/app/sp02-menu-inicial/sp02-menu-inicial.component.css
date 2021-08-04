@@ -33,7 +33,7 @@ nav {
 	margin-top: 1rem;
     padding: 1vh;
 }
-body {
+.head {
 	background-color: #ffb800;
 	margin: 0;
 	width: 100%;
@@ -44,7 +44,7 @@ body {
     align-items: center;
 	background-color: #ededed;
 	border-radius: 3rem 3rem 0 0;
-	height:88vh;
+	height:86vh;
 }
 #menu{
 	display: grid;

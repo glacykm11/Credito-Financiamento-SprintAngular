@@ -9,68 +9,25 @@ nav {
 	justify-content: center;
 	margin-top: 0.5rem;
   }
-  nav a:first-child {
+nav a:first-child {
 	margin-top: 0.5rem;
 	margin-left: 1rem;
 	justify-content: left;
 	align-content: center;
 	align-self: center;
-  }
+}
 #bemvindo{	
 	background-color: white;
 	border-radius: 50px;
 	width: 20rem;
 	padding: 0.5rem;
 	margin-top: 0.5rem;
-	margin-bottom: 0.5rem;
 	text-align: center;
 	display: grid;
 	grid-template-columns: 0.35fr 1fr;
 }
-
-/*Conteúdo da página (Serviços)*/
-#tituloMenu{
-	margin-top: 1rem;
-    padding: 1vh;
-}
-body {
+.head {
 	background-color: #ffb800;
 	margin: 0;
 	width: 100%;
-}
-.content-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-	background-color: #ededed;
-	border-radius: 3rem 3rem 0 0;
-	height:88vh;
-}
-#menu{
-	display: grid;
-	grid-template-columns: 0.35fr 1fr;
-}
-.content-box article {
-	background-color: white;
-	border-radius: 50px;
-	padding: 1rem;
-	width: 20rem;
-	margin-bottom: 2rem;
-}
-
-.link{
-	text-decoration: unset;
-	color: black;
-	
-}
-.content-box article:hover{
-	text-decoration: unset;
-	background-color: #ffb800;
-	transition: 0.2s;
-}
-
-h5{
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
