@@ -21,7 +21,7 @@ nav a:first-child {
 	border-radius: 50px;
 	width: 20rem;
 	padding: 0.5rem;
-	margin-top: 0.5rem;
+	margin-top: 1rem;
 	text-align: center;
 	display: grid;
 	grid-template-columns: 0.35fr 1fr;

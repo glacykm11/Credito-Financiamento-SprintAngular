@@ -1,5 +1,6 @@
+import { SP01IntroducaoAoCreditoComponent } from './sp01-introducao-ao-credito/sp01-introducao-ao-credito.component';
 import { Sp02MenuInicialComponent } from './sp02-menu-inicial/sp02-menu-inicial.component';
-import { Sp03PosContratoComponent } from './sp03-pos-contrato/sp03-pos-contrato.component';
+import { Sp03RenegociacaoComponent } from './sp03-renegociacao/sp03-renegociacao.component';
 import { Sp04CreditoImobiliarioComponent } from './sp04-credito-imobiliario/sp04-credito-imobiliario.component';
 import { Sp05FinanciamentoDeCarrosComponent } from './sp05-financiamento-de-carros/sp05-financiamento-de-carros.component';
 import { Sp06FinanciamentoDeSmartphoneComponent } from './sp06-financiamento-de-smartphone/sp06-financiamento-de-smartphone.component';
@@ -10,8 +11,10 @@ import { NgModule } from '@angular/core';
 
 
 const routes: Routes = [
-    { path: '' , component: Sp02MenuInicialComponent},
-    { path: 'sp03-pos-contrato' , component: Sp03PosContratoComponent},
+    { path: '' , component: SP01IntroducaoAoCreditoComponent},
+    { path: 'sp01-introducao-ao-credito' , component: SP01IntroducaoAoCreditoComponent},
+    { path: 'sp02-menu-inicial' , component: Sp02MenuInicialComponent},
+    { path: 'sp03-renegociacao' , component: Sp03RenegociacaoComponent},
     { path: 'sp04-credito-imobiliario' , component: Sp04CreditoImobiliarioComponent},
     { path: 'sp05-financiamento-de-carros' , component: Sp05FinanciamentoDeCarrosComponent},
     { path: 'sp06-financiamento-de-smartphone' , component: Sp06FinanciamentoDeSmartphoneComponent},

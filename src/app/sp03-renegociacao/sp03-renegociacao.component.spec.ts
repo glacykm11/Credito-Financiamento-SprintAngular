@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Sp03PosContratoComponent } from './sp03-pos-contrato.component';
+import { Sp03RenegociacaoComponent } from './sp03-renegociacao.component';
 
-describe('Sp03PosContratoComponent', () => {
-  let component: Sp03PosContratoComponent;
-  let fixture: ComponentFixture<Sp03PosContratoComponent>;
+describe('Sp03RenegociacaoComponent', () => {
+  let component: Sp03RenegociacaoComponent;
+  let fixture: ComponentFixture<Sp03RenegociacaoComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ Sp03PosContratoComponent ]
+      declarations: [ Sp03RenegociacaoComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(Sp03PosContratoComponent);
+    fixture = TestBed.createComponent(Sp03RenegociacaoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

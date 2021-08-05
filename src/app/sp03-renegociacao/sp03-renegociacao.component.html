@@ -1,0 +1,34 @@
+<section class="saldo-box">
+    <h2>Valor total do empréstimo</h2>
+    <div class="saldo">
+      <p id='container'>R$ 75.000,00 </p>  
+      <span id="action" class="btn btn-light"><img id="teste" value="olho" src="../../assets/images/EyeSlash.svg" alt="icone de visibilidade"></span>         
+    </div>
+  </section>
+   <main> 
+      <article>
+
+        <div id="curve_chart"  class=""></div>
+
+        <form class="mb-3" >
+          <label for="formGroupExampleInput" class="form-label">Saldo Devedor :</label>
+          <div class="test">
+            
+               <span class="input-group-text">R$  <span id="saldoDevedor">15.000,00</span> </span>
+              
+            </div>
+       
+          <label  for="formGroupExampleInput" class="form-label">Número de parcelas desejada :</label>
+          <input type="number" class="form-control" id="qtdParcela" placeholder="Número de parcelas" name="parcelas" />
+
+          <label for="formGroupExampleInput" class="form-label">Valor da parcela</label>
+          <input type="text" class="form-control" id="valorParcela" placeholder="Valor parcela" />
+
+          <label for="formGroupExampleInput" class="form-label">Vencimento mensal :</label>
+          <input type="date" class="form-control" id="formGroupExampleInput" />
+<!-- data do vencimento mensal, trocar apenas para dias pois desta forma da erro escolhendo dias que ja passou-->
+
+            <button type="button" class="btn btn-warning d-flex" onclick="buttonRenegocie(event)" id="submit-button" >Renegociar <img src="../../assets/images/handshake-regular.svg" alt="icone de aperto de mão"/></button>       
+        </form>            
+      </article>
+  </main>
