@@ -3,7 +3,9 @@ h1{
     color: aliceblue;
   }
   section{
-   justify-content: center;
+    display: flex;
+    flex-direction: column;
+   
   }
   
   nav{
@@ -139,7 +141,54 @@ h1{
   
   .btn-warning{
     width: 20%;
-    margin: 2% 0% 0% 40%
+  
   }
   
-  
+  .smartphones{
+    width: 10rem;
+    margin: 2rem;
+}
+
+#parcelas{
+    display: flex;
+    justify-content: center;
+}
+
+.smartphoneSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem;
+}
+
+.my-dropdown{
+    background-color: rgb(245, 245, 245) !important;
+    border-color: rgba(252, 153, 38, 1) !important;
+    border-width: 1px !important;
+    color: black !important;
+    margin: 5px !important;
+}
+
+.dropdown-item:hover{
+    background-color: rgba(252, 153, 38, 0.5) !important;
+}
+
+.my-dropdown:hover{
+    background-color: rgba(252, 153, 38, 0.5) !important;
+}
+
+.my-dropdown:active, .my-dropdown:focus{
+    border-color: rgba(252, 153, 38, 1) !important;
+    box-shadow: 0 0 0 0.2rem rgba(252, 153, 38, 0.25) !important;
+}
+
+#selectParcelas{
+    display: flex;
+    justify-content: center;
+}
+
+#fazerPedido{
+  display: flex;
+  justify-content: center;
+}
+

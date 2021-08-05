@@ -1,37 +1,58 @@
-<main>  
+<section class="content-box">
+  <section>
     <h2>Agora conte mais sobre o smartphone</h2>
-    
-    <p>Qual o smartphone?</p>
-    
-    <section id="teste">
-      <select id="smartphones" class="form-select">
-        <option value="smartphoneX" selected>Escolha:</option>
-        <option value="iphone12">iPhone12</option>
-        <option value="iphone11">iPhone11</option>
-        <option value="iphone10">iPhone10</option>
-        <option value="iphone8">iPhone8</option>
-        <option value="samsungS20">Samsung Galaxy S20</option>
-        <option value="samsungfold">Samsung Fold</option>
-      </select>
-    </section>
+  </section>
 
-    <section class="foto">
-      <img id="fotoSmartphone"  src="/[SP06]-Financiamento de Smartphone/img/smartphones.png" alt="Smarthones" >
-    </section>
+  <section>
+      <article>
+          <h2>Qual o smartphone?</h2>
+      </article>
+  </section>
 
-    <section class="perguntas">
-      <h2>Quantidade de parcelas?</h2>
-    </section>
-       
-    <select id= "parcelas" class="form-select" title="Escolha um smartphone acima" disabled>
-      <option selected >Parcelas:</option>
-      <option value="parcela1"></option>
-      <option value="parcela2"></option>
-      <option value="parcela3"></option>
-      <option value="parcela4"></option>
-      <option value="parcela5"></option>
-    </select>
+  <section>
+      <article>
+          <img id="fotoSmartphone" class="smartphones"  *ngIf="selectedCelular == ''" src='../../assets/images/smartphones.png' alt="Smartphones">
+      </article>
 
-    <a id="botaoRealizarPedido" href=""><button type="button"  class="btn btn-warning">Realizar Pedido</button></a>
-    
-  </main>
+      <article>
+          <img *ngIf="selection == 'iPhone 12'" id="fotoSmartphone" class="smartphones" src='../../assets/images/iphone12.png' alt="Smartphones">
+          <img *ngIf="selection == 'iPhone 11'" id="fotoSmartphone" class="smartphones" src='../../assets/images/iPhone 11.png' alt="Smartphones">
+          <img *ngIf="selection == 'iPhone X'" id="fotoSmartphone" class="smartphones" src='../../assets/images/iphone10.jpg' alt="Smartphones">
+          <img *ngIf="selection == 'iPhone 8'" id="fotoSmartphone" class="smartphones" src='../../assets/images/iphone8.png' alt="Smartphones">
+      </article>
+
+      <article>
+        
+        <select class="btn my-dropdown" [(ngModel)] = "selection" >
+          <option  disabled>Selecione o smartphone</option>
+          <option *ngFor="let smartphone of smartphones">{{ smartphone }}</option>
+        </select>
+      </article>
+  </section>
+
+  <section>
+      <article>
+          <h2>Quantidade de parcelas?</h2>
+      </article>
+      
+      <article id="parcelas">
+          <select class="btn my-dropdown" *ngIf="selection == 'iPhone 12'">
+              <option *ngFor="let parcela of parcelasIphone12">{{ parcela }}</option> 
+          </select>
+
+          <select class="btn my-dropdown" *ngIf="selection == 'iPhone 11'">
+              <option *ngFor="let parcela of parcelasIphone11">{{ parcela }}</option> 
+          </select>
+
+          <select class="btn my-dropdown" *ngIf="selection == 'iPhone X'">
+              <option *ngFor="let parcela of parcelasIphone10">{{ parcela }}</option> 
+          </select>
+
+          <select class="btn my-dropdown" *ngIf="selection == 'iPhone 8'">
+              <option *ngFor="let parcela of parcelasIphone8">{{ parcela }}</option> 
+          </select>
+      </article>
+  </section>
+  
+  <button id="fazerPedido" class="btn btn-warning" (click)="recarregarPagina()">Fazer pedido</button>
+</section>
