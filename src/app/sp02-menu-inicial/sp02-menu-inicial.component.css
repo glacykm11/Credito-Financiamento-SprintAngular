@@ -44,7 +44,7 @@ nav {
     align-items: center;
 	background-color: #ededed;
 	border-radius: 3rem 3rem 0 0;
-	height:86vh;
+	height:100%;
 }
 #menu{
 	display: grid;
