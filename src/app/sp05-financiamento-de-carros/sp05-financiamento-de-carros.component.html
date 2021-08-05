@@ -4,18 +4,9 @@
             <h2>Qual o tipo de veículo que você deseja?</h2>
             
             <section>
-            <select id="veiculos" class="form-select" >
-                <option selected>Escolha o veículo:</option>
-                <option>Barco</option>
-                <option>Caminhão</option>
-                <option>Carro</option>
-                <option>Iate</option>
-                <option>JetSki</option>
-                <option>Lancha</option>
-                <option>Limousine</option>
-                <option>Moto</option>
-                <option>Van</option>
-            </select>
+                <select id="veiculos" class="form-select">
+                    <option *ngFor ="let veiculo of veiculos">{{ veiculo }}</option>
+                </select>
             </section>
 
             <section>
@@ -27,7 +18,7 @@
                 <label>Qual o valor do veículo desejado?</label>
                 <div class="input-group mb-3">
                     <span class="input-group-text">R$</span>
-                    <input type="text" class="form-control" onkeypress="$(this).mask('000.000.000.000.000,00', {reverse: true});" placeholder="0,00">
+                    <input type="text" class="form-control" mask="separator.2" thousandSeparator="." placeholder="0,00">
                 </div>
             </section>
 
@@ -46,10 +37,8 @@
                 <label class="form-check-label" for="flexRadioDefault1">Usado</label>
             </section>
         
-
-            <div id="botaoSubmit" value="text">
-                <a href="#" class="btn btn-warning" type="submit" value= "realizarpedido" id="botaopedido">Realizar Pedido</a>
-            </div>
+            <br>
+            <button class="btn btn-warning" (click)="realizarPedido()">Realizar pedido</button>
             
     </section>
 </main>
