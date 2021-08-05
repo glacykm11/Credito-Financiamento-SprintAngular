@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Sp05FinanciamentoDeCarrosComponent implements OnInit {
 
+  veiculos: string[] = ['Escolha o veículo:','Barco','Caminhão','Carro','Iate', 
+  'JetSki','Lancha', 'Limousine', 'Moto', 'Van']
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  realizarPedido(){
+    alert("Pedido realizado!");
+    document.location.reload(true);
+  }
 }

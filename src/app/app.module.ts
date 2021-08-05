@@ -14,6 +14,9 @@ import { Sp06FinanciamentoDeSmartphoneComponent } from './sp06-financiamento-de-
 import { Sp07CreditoPessoalComponent } from './sp07-credito-pessoal/sp07-credito-pessoal.component';
 import { Sp08FinanciamentoIdealComponent } from './sp08-financiamento-ideal/sp08-financiamento-ideal.component';
 
+/* Importação do ngx-mask para formatar para moeda BRL na tela financiamento de carros */
+import { NgxMaskModule, IConfig } from 'ngx-mask';
+export const options: Partial<IConfig> | (() => Partial<IConfig>) | null = null;
 
 @NgModule({
   declarations: [
@@ -32,6 +35,7 @@ import { Sp08FinanciamentoIdealComponent } from './sp08-financiamento-ideal/sp08
   imports: [
     BrowserModule,
     AppRoutingModule,
+    NgxMaskModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
